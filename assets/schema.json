@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lexora with JSON-Adapter",
+  "description": "A schema for your JSON translation file",
+  "type": "object",
+  "additionalProperties": {
+    "description": "Locale containing either a scope or translation",
+    "type": "object",
+    "additionalProperties": {
+      "description": "Either a scope name or a token",
+      "anyOf": [
+        {
+          "type": "string",
+          "description": "A translation of a token"
+        },
+        {
+          "type": "object",
+          "description": "A scope containing translations",
+          "additionalProperties": {
+            "type": "string",
+            "description": "A translation of a token"
+          }
+        }
+      ]
+    }
+  }
+}
