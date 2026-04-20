@@ -1,6 +1,6 @@
 {
   "name": "@ogs-gmbh/lexora-json-adapter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High-performance JSON file adapter for Lexora - the modern, type-safe i18n solution. Seamlessly load translations from JSON files with zero configuration. Perfect for React, Node.js, and TypeScript projects.",
   "keywords": [
     "adapter",
